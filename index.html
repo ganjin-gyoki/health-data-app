@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>health-data</title>
+<style>
+:root { --bg: #ffffff; --fg: #1a202c; --muted: #4a5568; --line: #e2e8f0; --link: #2b6cb0; }
+@media (prefers-color-scheme: dark) { :root { --bg: #1a202c; --fg: #edf2f7; --muted: #a0aec0; --line: #2d3748; --link: #90cdf4; } }
+body { margin: 0; background: var(--bg); color: var(--fg); font-family: "Hiragino Sans", "Yu Gothic UI", Meiryo, sans-serif; line-height: 1.8; }
+main { max-width: 720px; margin: 0 auto; padding: 32px 16px; }
+h1 { font-size: 26px; margin: 0 0 8px; }
+h2 { font-size: 18px; margin: 28px 0 8px; border-bottom: 1px solid var(--line); padding-bottom: 4px; }
+p, li { color: var(--fg); }
+.muted { color: var(--muted); font-size: 14px; }
+a { color: var(--link); }
+</style>
+</head>
+<body>
+<main>
+<h1>health-data</h1>
+<p class="muted">個人用の健康レポートツール / A personal health report tool</p>
+
+<h2>概要</h2>
+<p>health-data は、作者本人1人だけが使う個人用のツールです。作者自身の Google アカウントから Google Health API で睡眠・体重・歩数・消費カロリーなどのデータを読み取り、毎朝の健康レポートを作って、作者自身の Gmail アドレスへ送ります。</p>
+<p>このツールは一般には提供していません。作者以外の人がログインすることは想定していません。</p>
+
+<h2>Overview</h2>
+<p>health-data is a personal tool used only by its author. It reads the author's own sleep, weight, step and calorie data from the Google Health API, writes a short daily health report, and sends it to the author's own Gmail address. It is not offered to anyone else.</p>
+
+<p><a href="privacy.html">プライバシーポリシー / Privacy Policy</a></p>
+<p class="muted">連絡先 / Contact: <a href="https://github.com/ganjin-gyoki">github.com/ganjin-gyoki</a></p>
+</main>
+</body>
+</html>

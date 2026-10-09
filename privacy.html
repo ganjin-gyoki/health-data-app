@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>health-data プライバシーポリシー</title>
+<style>
+:root { --bg: #ffffff; --fg: #1a202c; --muted: #4a5568; --line: #e2e8f0; --link: #2b6cb0; }
+@media (prefers-color-scheme: dark) { :root { --bg: #1a202c; --fg: #edf2f7; --muted: #a0aec0; --line: #2d3748; --link: #90cdf4; } }
+body { margin: 0; background: var(--bg); color: var(--fg); font-family: "Hiragino Sans", "Yu Gothic UI", Meiryo, sans-serif; line-height: 1.8; }
+main { max-width: 720px; margin: 0 auto; padding: 32px 16px; }
+h1 { font-size: 24px; margin: 0 0 8px; }
+h2 { font-size: 18px; margin: 28px 0 8px; border-bottom: 1px solid var(--line); padding-bottom: 4px; }
+.muted { color: var(--muted); font-size: 14px; }
+a { color: var(--link); }
+</style>
+</head>
+<body>
+<main>
+<h1>プライバシーポリシー</h1>
+<p class="muted">health-data ・ 最終更新 2026年10月9日</p>
+
+<h2>利用者</h2>
+<p>health-data は作者本人1人だけが使う個人用のツールです。作者以外の人のデータは扱いません。</p>
+
+<h2>読み取るデータ</h2>
+<p>作者自身の Google アカウントから、次の読み取り専用の権限で Google Health API のデータを読み取ります。</p>
+<ul>
+<li>睡眠（googlehealth.sleep.readonly）：睡眠の時間帯、睡眠時間、睡眠段階</li>
+<li>活動（googlehealth.activity_and_fitness.readonly）：歩数、消費カロリー</li>
+<li>計測値（googlehealth.health_metrics_and_measurements.readonly）：体重、体脂肪率、安静時心拍</li>
+</ul>
+<p>このほか、レポートを作者自身のアドレスへ送るために Gmail の送信権限（gmail.send）を使います。メールの読み取りや削除はしません。</p>
+
+<h2>データの使い方</h2>
+<ul>
+<li>読み取ったデータは、作者本人に向けた毎朝の健康レポートを作るためだけに使います。</li>
+<li>レポートの文章を作るため、集計した値を Anthropic 社の Claude に渡します。</li>
+<li>できあがったレポートは、作者自身の Gmail アドレスへ送り、作者の非公開の GitHub リポジトリに保存します。</li>
+<li>取得した元のデータと認証情報は、作者のパソコンの中にだけ保存します。</li>
+</ul>
+
+<h2>第三者への提供</h2>
+<p>データを販売したり、広告に使ったり、上に書いた以外の第三者へ渡したりはしません。Google API から受け取ったデータの使い方は、<a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>（Limited Use の要件を含む）に従います。</p>
+
+<h2>削除</h2>
+<p>作者は、Google アカウントの設定からこのツールの権限をいつでも取り消せます。パソコンに保存したデータと認証情報は、ファイルを消せば削除できます。</p>
+
+<h2>Privacy Policy (English summary)</h2>
+<p>health-data is used only by its author. It reads the author's own sleep, activity and body measurement data from the Google Health API with read-only scopes, and uses the gmail.send scope only to email the report to the author's own address. Aggregated values are sent to Anthropic's Claude to write the report text. Reports are emailed to the author and stored in the author's private GitHub repository; raw data and credentials stay on the author's computer. Data is never sold, used for advertising, or shared with any other party. Use of information received from Google APIs adheres to the Google API Services User Data Policy, including the Limited Use requirements.</p>
+
+<h2>連絡先 / Contact</h2>
+<p><a href="https://github.com/ganjin-gyoki">github.com/ganjin-gyoki</a></p>
+<p><a href="index.html">ホームに戻る / Home</a></p>
+</main>
+</body>
+</html>
